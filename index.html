@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Mama</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.cdnfonts.com/css/manrope" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/baloo" rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-primary: #F88AB0;
+    }
+
+    @layer utilities {
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .font-baloo {
+            font-family: 'Baloo', cursive;
+        }
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 font-manrope">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-primary">Laundry</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">Tentang</a>
+        <a href="#services" class="hover:text-primary">Layanan</a>
+        <a href="#pricing" class="hover:text-primary">Harga</a>
+        <a href="#contact" class="hover:text-primary">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-primary text-white text-center py-20">
+    <h2 class="text-3xl md:text-5xl font-bold font-baloo">Laundry</h2>
+    <p class="mt-4 text-lg">Bersih, Cepat, Wangi & Gratis Antar-Jemput!</p>
+    <a href="#contact" class="mt-6 inline-block bg-white text-primary font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100">Pesan Sekarang</a>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-2xl font-bold mb-4 text-center">Tentang Kami</h3>
+    <p class="text-center max-w-3xl mx-auto text-gray-600">
+      Laundry Mama adalah laundry rumahan terpercaya dengan layanan antar-jemput gratis. 
+      Kami hadir untuk memudahkan Anda yang sibuk, dengan hasil cucian yang bersih, wangi, dan rapi.
+    </p>
+  </section>
+
+  <!-- Layanan -->
+  <section id="services" class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-8 text-center">Layanan Kami</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h4 class="font-semibold text-lg mb-2">Cuci Kiloan</h4>
+          <p class="text-gray-600">Laundry cepat & ekonomis per kilogram.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h4 class="font-semibold text-lg mb-2">Setrika Saja</h4>
+          <p class="text-gray-600">Baju rapi dan wangi tanpa repot setrika.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h4 class="font-semibold text-lg mb-2">Express 1 Hari</h4>
+          <p class="text-gray-600">Selesai di hari yang sama, tetap wangi & rapi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Harga -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-2xl font-bold mb-8 text-center">Harga Laundry</h3>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border border-gray-200">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th class="p-3">Layanan</th>
+            <th class="p-3">Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-gray-200">
+            <td class="p-3">Cuci Kiloan</td>
+            <td class="p-3">Rp 7.000 / kg</td>
+          </tr>
+          <tr class="border-t border-gray-200">
+            <td class="p-3">Setrika</td>
+            <td class="p-3">Rp 5.000 / kg</td>
+          </tr>
+          <tr class="border-t border-gray-200">
+            <td class="p-3">Bed Cover</td>
+            <td class="p-3">Rp 20.000 / pcs</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="bg-primary text-white py-16">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h3 class="text-2xl font-bold mb-4">Hubungi Kami</h3>
+      <p class="mb-6">Siap jemput laundry Anda kapan saja. Hubungi via WhatsApp untuk pesan antar-jemput gratis.</p>
+      <a href="https://wa.me/6281234567890" target="_blank" class="bg-white text-primary font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100">Chat via WhatsApp</a>
+      <p class="mt-6">Alamat: Jl. Contoh No.123, Kota</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-4">
+    <p>&copy; 2025 Laundry Mama. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
